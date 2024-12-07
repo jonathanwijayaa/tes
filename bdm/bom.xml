@@ -8,6 +8,7 @@
                 <field type="STRING" length="255" name="namaRuangan" nullable="false" collection="false"/>
                 <field type="LOCALDATE" length="255" name="tanggalPeminjaman" nullable="false" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="jamPeminjaman" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="peminjamId" nullable="false" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
