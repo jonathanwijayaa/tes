@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="wd2">
+      <firstName>Gloria</firstName>
+      <lastName>Virginia</lastName>
+      <title>Mrs</title>
+      <jobTitle>Wakil Dekan 2</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">wd2</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="wd3">
+      <firstName>Matahari</firstName>
+      <lastName>Nendya</lastName>
+      <title>Mr</title>
+      <jobTitle>Wakil Dekan 3</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">wd3</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="dekan">
+      <firstName>Restyandito</firstName>
+      <lastName>Dito</lastName>
+      <title>Mr</title>
+      <jobTitle>Dekan</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">dekan</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="jonat">
+      <firstName>Peminjam</firstName>
+      <lastName>Internal</lastName>
+      <title>Mr</title>
+      <jobTitle>Ketua LK</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">jonat</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="dika">
+      <firstName>Peminjam</firstName>
+      <lastName>Eksternal</lastName>
+      <title>Mr</title>
+      <jobTitle>Eksternal</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">dika</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="nael">
+      <firstName>Peminjam</firstName>
+      <lastName>Fakultas Unit Lain</lastName>
+      <title>Mr</title>
+      <jobTitle>Fakultas Unit Lain</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">nael</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="kepala">
+      <firstName>Kepala</firstName>
+      <lastName>Lab</lastName>
+      <title>Mr</title>
+      <jobTitle>Kepala Lab FTI</jobTitle>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">kepala</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="koor">
+      <firstName>Koordinator</firstName>
+      <lastName>Lab</lastName>
+      <title>Mr</title>
+      <jobTitle>Koordinator Lab</jobTitle>
+      <manager></manager>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">koor</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="penjaga">
+      <firstName>Penjaga</firstName>
+      <lastName>Lab</lastName>
+      <title>Mr</title>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">penjaga</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="PeminjamInternal">
+      <displayName>Peminjam Internal</displayName>
+      <description>Ini peminjam dari organisasi FTI&#xD;
+</description>
+    </role>
+    <role name="Peminjam Eksternal">
+      <displayName>Peminjam Eksternal</displayName>
+      <description>Ini peminjam dari luar UKDW</description>
+    </role>
+    <role name="Peminjam Fakultas/Unit Lain">
+      <displayName>Peminjam Fakultas/Unit Lain</displayName>
+      <description>Ini peminjam dari fakultas / unit lain di UKDW</description>
+    </role>
+    <role name="Dekan">
+      <displayName>Dekan</displayName>
+      <description>Ini Dekan FTI</description>
+    </role>
+    <role name="WD2">
+      <displayName>WD2</displayName>
+      <description>Ini wakil dekan 2 FTI</description>
+    </role>
+    <role name="WD3">
+      <displayName>WD3</displayName>
+      <description>Ini wakil dekan 3 FTI</description>
+    </role>
+    <role name="KepalaLabFTI">
+      <displayName>Kepala Lab FTI</displayName>
+      <description>ini kepala lab</description>
+    </role>
+    <role name="Koordinator Lab">
+      <displayName>Koordinator Lab</displayName>
+      <description>Ini koordinator lab</description>
+    </role>
+    <role name="PenjagaLab">
+      <displayName>Penjaga Lab</displayName>
+      <description>Ini penjaga lab</description>
+    </role>
+  </roles>
+  <groups>
+    <group name="Peminjam">
+      <displayName>Peminjam</displayName>
+      <description>Grup untuk peminjaman</description>
+    </group>
+    <group name="FTI">
+      <displayName>FTI</displayName>
+      <description>Grup untuk role dari FTI</description>
+    </group>
+    <group name="PengurusLab" parentPath="/FTI">
+      <displayName>Pengurus Lab</displayName>
+      <description>Grup untuk pengurus Lab FTI</description>
+    </group>
+    <group name="Dekanat" parentPath="/FTI">
+      <displayName>Dekanat</displayName>
+      <description>Grup untuk Dekanat FTI</description>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>wd2</userName>
+      <roleName>WD2</roleName>
+      <groupName>Dekanat</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>wd3</userName>
+      <roleName>WD3</roleName>
+      <groupName>Dekanat</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>dekan</userName>
+      <roleName>Dekan</roleName>
+      <groupName>Dekanat</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>jonat</userName>
+      <roleName>PeminjamInternal</roleName>
+      <groupName>Peminjam</groupName>
+    </membership>
+    <membership>
+      <userName>dika</userName>
+      <roleName>PeminjamInternal</roleName>
+      <groupName>Peminjam</groupName>
+    </membership>
+    <membership>
+      <userName>nael</userName>
+      <roleName>Peminjam Fakultas/Unit Lain</roleName>
+      <groupName>Peminjam</groupName>
+    </membership>
+    <membership>
+      <userName>kepala</userName>
+      <roleName>KepalaLabFTI</roleName>
+      <groupName>PengurusLab</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>koor</userName>
+      <roleName>Koordinator Lab</roleName>
+      <groupName>PengurusLab</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+    <membership>
+      <userName>penjaga</userName>
+      <roleName>PenjagaLab</roleName>
+      <groupName>PengurusLab</groupName>
+      <groupParentPath>/FTI</groupParentPath>
+    </membership>
+  </memberships>
+</organization:Organization>
