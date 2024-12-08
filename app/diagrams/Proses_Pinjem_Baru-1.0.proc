@@ -2,7 +2,9 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_fk88MLR1Ee-vkZXSg-MMYA" name="Proses_Pinjem_Baru" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_fk88MbR1Ee-vkZXSg-MMYA" name="Peminjaman" version="1.1">
-      <elements xmi:type="process:Lane" xmi:id="_fk88MrR1Ee-vkZXSg-MMYA" name="Employee lane" actor="_fk88S7R1Ee-vkZXSg-MMYA">
+      <elements xmi:type="process:Lane" xmi:id="_wSMVkLR1Ee-vkZXSg-MMYA" name="Pengurus Lab" actor="_S-Fs4LR2Ee-vkZXSg-MMYA"/>
+      <elements xmi:type="process:Lane" xmi:id="_qdZFYLR1Ee-vkZXSg-MMYA" name="Dekanat" actor="_CTcUgLR2Ee-vkZXSg-MMYA"/>
+      <elements xmi:type="process:Lane" xmi:id="_fk88MrR1Ee-vkZXSg-MMYA" name="Peminjam" actor="_F9N3kLR2Ee-vkZXSg-MMYA">
         <elements xmi:type="process:StartEvent" xmi:id="_fk88M7R1Ee-vkZXSg-MMYA" name="Start1" outgoing="_fk88SLR1Ee-vkZXSg-MMYA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_fk88NLR1Ee-vkZXSg-MMYA" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_fk88NbR1Ee-vkZXSg-MMYA" name="" content="" returnTypeFixed="true"/>
@@ -34,7 +36,13 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_fk88SbR1Ee-vkZXSg-MMYA"/>
         <condition xmi:type="expression:Expression" xmi:id="_fk88SrR1Ee-vkZXSg-MMYA" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_fk88S7R1Ee-vkZXSg-MMYA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_fk88S7R1Ee-vkZXSg-MMYA" documentation="This is an example of actor that is mapped to any ACME users" name="Employee actor"/>
+      <actors xmi:type="process:Actor" xmi:id="_-4U4gLR1Ee-vkZXSg-MMYA" documentation="untuk Peminjam" name="Peminjam" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_CTcUgLR2Ee-vkZXSg-MMYA" documentation="Untuk Dekan Approved Eksternal" name="Dekan"/>
+      <actors xmi:type="process:Actor" xmi:id="_F9N3kLR2Ee-vkZXSg-MMYA" documentation="Untuk Approved Fakultas atau Unit Lain" name="WD2"/>
+      <actors xmi:type="process:Actor" xmi:id="_Ij4X0LR2Ee-vkZXSg-MMYA" documentation="Untuk Approved Internal" name="WD3"/>
+      <actors xmi:type="process:Actor" xmi:id="_PwtK4LR2Ee-vkZXSg-MMYA" documentation="Untuk approved semua peminjaman" name="KepalaLab"/>
+      <actors xmi:type="process:Actor" xmi:id="_S-Fs4LR2Ee-vkZXSg-MMYA" documentation="Untuk menjaga lab dan konfirmasi" name="PengawasLab"/>
       <contract xmi:type="process:Contract" xmi:id="_fk88TLR1Ee-vkZXSg-MMYA"/>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_fk88TbR1Ee-vkZXSg-MMYA">
         <name xmi:type="expression:Expression" xmi:id="_fk88TrR1Ee-vkZXSg-MMYA" content="" returnTypeFixed="true"/>
@@ -89,7 +97,25 @@
           <styles xmi:type="notation:FontStyle" xmi:id="_fk88dLR1Ee-vkZXSg-MMYA" fontName="Segoe UI"/>
           <styles xmi:type="notation:LineStyle" xmi:id="_fk88dbR1Ee-vkZXSg-MMYA"/>
           <styles xmi:type="notation:FillStyle" xmi:id="_fk88drR1Ee-vkZXSg-MMYA"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fk88d7R1Ee-vkZXSg-MMYA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fk88d7R1Ee-vkZXSg-MMYA" x="53" y="750" width="1292" height="450"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_qdaTgLR1Ee-vkZXSg-MMYA" type="3007" element="_qdZFYLR1Ee-vkZXSg-MMYA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_qdaThbR1Ee-vkZXSg-MMYA" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_qdaThrR1Ee-vkZXSg-MMYA" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_qdaTgbR1Ee-vkZXSg-MMYA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_qdaTgrR1Ee-vkZXSg-MMYA" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_qdaTg7R1Ee-vkZXSg-MMYA"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_qdaTh7R1Ee-vkZXSg-MMYA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_qdaThLR1Ee-vkZXSg-MMYA" x="53" y="300" width="1292" height="450"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_wSM8oLR1Ee-vkZXSg-MMYA" type="3007" element="_wSMVkLR1Ee-vkZXSg-MMYA">
+          <children xmi:type="notation:DecorationNode" xmi:id="_wSM8pbR1Ee-vkZXSg-MMYA" type="5007"/>
+          <children xmi:type="notation:DecorationNode" xmi:id="_wSM8prR1Ee-vkZXSg-MMYA" type="7002"/>
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_wSM8obR1Ee-vkZXSg-MMYA"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_wSM8orR1Ee-vkZXSg-MMYA" fontName="Segoe UI"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_wSM8o7R1Ee-vkZXSg-MMYA"/>
+          <styles xmi:type="notation:FillStyle" xmi:id="_wSM8p7R1Ee-vkZXSg-MMYA"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_wSM8pLR1Ee-vkZXSg-MMYA" x="53" y="10" width="1292" height="300"/>
         </children>
       </children>
       <styles xmi:type="notation:DescriptionStyle" xmi:id="_fk88eLR1Ee-vkZXSg-MMYA"/>

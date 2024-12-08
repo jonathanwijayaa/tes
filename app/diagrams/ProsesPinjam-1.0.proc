@@ -2,7 +2,7 @@
 <xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:decision="http://www.bonitasoft.org/ns/bpm/process/decision" xmlns:expression="http://www.bonitasoft.org/ns/bpm/expression" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:process="http://www.bonitasoft.org/ns/bpm/process">
   <process:MainProcess xmi:id="_MlqkgLRxEe-vkZXSg-MMYA" name="ProsesPinjam" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_VdEqELRxEe-vkZXSg-MMYA" name="DekanatFTI">
-      <elements xmi:type="process:Lane" xmi:id="_V3NoYLRxEe-vkZXSg-MMYA" name="Lane1" actor="_Uj2GkLRyEe-vkZXSg-MMYA"/>
+      <elements xmi:type="process:Lane" xmi:id="_V3NoYLRxEe-vkZXSg-MMYA" name="Lane1" actor="_SqVnQLRyEe-vkZXSg-MMYA"/>
       <formMapping xmi:type="process:FormMapping" xmi:id="_VdF4MLRxEe-vkZXSg-MMYA">
         <targetForm xmi:type="expression:Expression" xmi:id="_PPN5ULR0Ee-vkZXSg-MMYA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -34,7 +34,7 @@
         <value xmi:type="expression:Expression" xmi:id="_VdFRLrRxEe-vkZXSg-MMYA" content="" returnTypeFixed="true"/>
       </searchIndexes>
     </elements>
-    <elements xmi:type="process:Pool" xmi:id="_MlqkgbRxEe-vkZXSg-MMYA" name="Peminjam">
+    <elements xmi:type="process:Pool" xmi:id="_MlqkgbRxEe-vkZXSg-MMYA" name="Peminjaman">
       <elements xmi:type="process:Lane" xmi:id="_MlqkgrRxEe-vkZXSg-MMYA" name="Peminjam Lane" actor="_WJe8wLR0Ee-vkZXSg-MMYA">
         <elements xmi:type="process:StartEvent" xmi:id="_Mlqkg7RxEe-vkZXSg-MMYA" name="Start1" outgoing="_MlqkmLRxEe-vkZXSg-MMYA">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_MlqkhLRxEe-vkZXSg-MMYA" name="" content="" returnTypeFixed="true"/>
