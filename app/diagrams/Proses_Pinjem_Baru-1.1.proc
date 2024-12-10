@@ -3,7 +3,7 @@
   <process:MainProcess xmi:id="_hGACALZTEe-qoc0AhDuu2A" name="Proses_Pinjem_Baru" version="1.1" bonitaModelVersion="8">
     <elements xmi:type="process:Pool" xmi:id="_hGACAbZTEe-qoc0AhDuu2A" name="Peminjaman" version="1.2">
       <elements xmi:type="process:Lane" xmi:id="_hGACArZTEe-qoc0AhDuu2A" name="Dekanat" actor="_hGApi7ZTEe-qoc0AhDuu2A">
-        <elements xmi:type="process:Task" xmi:id="_hGACHbZTEe-qoc0AhDuu2A" name="Persetujuan WD3" outgoing="_hGApd7ZTEe-qoc0AhDuu2A" incoming="_LVsXILbyEe-qoc0AhDuu2A" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_hGACHbZTEe-qoc0AhDuu2A" name="Persetujuan Dekanat" outgoing="_hGApd7ZTEe-qoc0AhDuu2A" incoming="_LVsXILbyEe-qoc0AhDuu2A" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_hGACHrZTEe-qoc0AhDuu2A" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_hGACH7ZTEe-qoc0AhDuu2A" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_hGACILZTEe-qoc0AhDuu2A" name="" content="" returnTypeFixed="true"/>
