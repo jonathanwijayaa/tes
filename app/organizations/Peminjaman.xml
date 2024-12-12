@@ -2,34 +2,34 @@
 <organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
   <customUserInfoDefinitions/>
   <users>
-    <user userName="wd2">
+    <user userName="WD2">
       <firstName>Gloria</firstName>
       <lastName>Virginia</lastName>
       <title>Mrs</title>
       <jobTitle>Wakil Dekan 2</jobTitle>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">wd2</password>
+      <password encrypted="false">WD2</password>
       <customUserInfoValues/>
     </user>
-    <user userName="wd3">
+    <user userName="WD3">
       <firstName>Matahari</firstName>
       <lastName>Nendya</lastName>
       <title>Mr</title>
       <jobTitle>Wakil Dekan 3</jobTitle>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">wd3</password>
+      <password encrypted="false">WD3</password>
       <customUserInfoValues/>
     </user>
-    <user userName="dekan">
+    <user userName="Dekan">
       <firstName>Restyandito</firstName>
       <lastName>Dito</lastName>
       <title>Mr</title>
       <jobTitle>Dekan</jobTitle>
       <personalData/>
       <professionalData/>
-      <password encrypted="false">dekan</password>
+      <password encrypted="false">Dekan</password>
       <customUserInfoValues/>
     </user>
     <user userName="71220880">
@@ -154,19 +154,19 @@
   </groups>
   <memberships>
     <membership>
-      <userName>wd2</userName>
+      <userName>WD2</userName>
       <roleName>WD2</roleName>
       <groupName>Dekanat</groupName>
       <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
-      <userName>wd3</userName>
+      <userName>WD3</userName>
       <roleName>WD3</roleName>
       <groupName>Dekanat</groupName>
       <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
-      <userName>dekan</userName>
+      <userName>Dekan</userName>
       <roleName>Dekan</roleName>
       <groupName>Dekanat</groupName>
       <groupParentPath>/Approver</groupParentPath>
