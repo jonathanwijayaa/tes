@@ -4,7 +4,7 @@
         <businessObject qualifiedName="com.bpm.model.CekRuang">
             <description>untuk cek ruangan</description>
             <fields>
-                <field type="INTEGER" length="255" name="ruangId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="ruangId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="namaRuangan" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isAvailable" nullable="false" collection="false"/>
             </fields>
@@ -16,7 +16,7 @@
             <description>data pengajuan surat&#13;
 </description>
             <fields>
-                <field type="INTEGER" length="255" name="peminjamId" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="peminjamId" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="tipePeminjam" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="namaPeminjam" nullable="false" collection="false"/>
                 <field type="STRING" length="255" name="namaRuangan" nullable="false" collection="false"/>
@@ -33,10 +33,10 @@
         <businessObject qualifiedName="com.bpm.model.ReviewPengajuanDekan">
             <description>data approval buat dekanat with id peminjam</description>
             <fields>
-                <field type="INTEGER" length="255" name="idDekanat" nullable="false" collection="false"/>
-                <field type="INTEGER" length="255" name="idPeminjam" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idPeminjam" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idDekanat" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isApproved" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="reason" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="reasonRejected" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
@@ -45,10 +45,11 @@
         <businessObject qualifiedName="com.bpm.model.ReviewPengajuanLab">
             <description>data approval buat kepala lab with id peminjam</description>
             <fields>
-                <field type="INTEGER" length="255" name="idKepalaLab" nullable="false" collection="false"/>
-                <field type="INTEGER" length="255" name="idPeminjam" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idPeminjam" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idDekanat" nullable="false" collection="false"/>
+                <field type="LONG" length="255" name="idKepalaLab" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isApproved" nullable="false" collection="false"/>
-                <field type="STRING" length="255" name="reason" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="reasonRejected" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>
