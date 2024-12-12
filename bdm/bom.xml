@@ -16,7 +16,7 @@
         <businessObject qualifiedName="com.bpm.model.FeedbackRuangan">
             <description>untuk memberikan feedback ke user kalau ada ruangannya atau engga</description>
             <fields>
-                <field type="STRING" length="255" name="namaRuangan" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="namaRuangan" nullable="false" collection="false"/>
                 <field type="BOOLEAN" length="255" name="isAvailable" nullable="false" collection="false"/>
                 <field type="LONG" length="255" name="idRuangan" nullable="false" collection="false"/>
             </fields>
