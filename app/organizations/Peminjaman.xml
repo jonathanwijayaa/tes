@@ -37,6 +37,7 @@
       <lastName>Internal</lastName>
       <title>Mr</title>
       <jobTitle>Ketua LK</jobTitle>
+      <manager>wd3</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">jonat</password>
@@ -47,6 +48,7 @@
       <lastName>Eksternal</lastName>
       <title>Mr</title>
       <jobTitle>Eksternal</jobTitle>
+      <manager>dekan</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">dika</password>
@@ -57,6 +59,7 @@
       <lastName>Fakultas Unit Lain</lastName>
       <title>Mr</title>
       <jobTitle>Fakultas Unit Lain</jobTitle>
+      <manager>wd2</manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">nael</password>
