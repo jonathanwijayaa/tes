@@ -32,7 +32,7 @@
       <password encrypted="false">dekan</password>
       <customUserInfoValues/>
     </user>
-    <user userName="jonat">
+    <user userName="71220880">
       <firstName>Peminjam</firstName>
       <lastName>Internal</lastName>
       <title>Mr</title>
@@ -110,18 +110,6 @@
       <displayName>Peminjam Fakultas/Unit Lain</displayName>
       <description>Ini peminjam dari fakultas / unit lain di UKDW</description>
     </role>
-    <role name="Dekan">
-      <displayName>Dekan</displayName>
-      <description>Ini Dekan FTI</description>
-    </role>
-    <role name="WD2">
-      <displayName>WD2</displayName>
-      <description>Ini wakil dekan 2 FTI</description>
-    </role>
-    <role name="WD3">
-      <displayName>WD3</displayName>
-      <description>Ini wakil dekan 3 FTI</description>
-    </role>
     <role name="KepalaLabFTI">
       <displayName>Kepala Lab FTI</displayName>
       <description>ini kepala lab</description>
@@ -134,23 +122,34 @@
       <displayName>Penjaga Lab</displayName>
       <description>Ini penjaga lab</description>
     </role>
+    <role name="Dekan">
+      <displayName>Dekan</displayName>
+    </role>
+    <role name="WD2">
+      <displayName>WD2</displayName>
+    </role>
+    <role name="WD3">
+      <displayName>WD3</displayName>
+    </role>
   </roles>
   <groups>
-    <group name="Peminjam">
+    <group name="Requestor">
       <displayName>Peminjam</displayName>
       <description>Grup untuk peminjaman</description>
     </group>
-    <group name="FTI">
-      <displayName>FTI</displayName>
-      <description>Grup untuk role dari FTI</description>
-    </group>
-    <group name="PengurusLab" parentPath="/FTI">
-      <displayName>Pengurus Lab</displayName>
-      <description>Grup untuk pengurus Lab FTI</description>
-    </group>
-    <group name="Dekanat" parentPath="/FTI">
+    <group name="Dekanat" parentPath="/Approver">
       <displayName>Dekanat</displayName>
       <description>Grup untuk Dekanat FTI</description>
+    </group>
+    <group name="PengurusLab" parentPath="/Approver">
+      <displayName>PengurusLab</displayName>
+      <description>Grup untuk pengurusLab</description>
+    </group>
+    <group name="Approver">
+      <displayName>Approver</displayName>
+    </group>
+    <group name="Peminjam" parentPath="/Requestor">
+      <displayName>Peminjam</displayName>
     </group>
   </groups>
   <memberships>
@@ -158,52 +157,55 @@
       <userName>wd2</userName>
       <roleName>WD2</roleName>
       <groupName>Dekanat</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
       <userName>wd3</userName>
       <roleName>WD3</roleName>
       <groupName>Dekanat</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
       <userName>dekan</userName>
       <roleName>Dekan</roleName>
       <groupName>Dekanat</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
-      <userName>jonat</userName>
+      <userName>71220880</userName>
       <roleName>PeminjamInternal</roleName>
       <groupName>Peminjam</groupName>
+      <groupParentPath>/Requestor</groupParentPath>
     </membership>
     <membership>
       <userName>dika</userName>
       <roleName>PeminjamInternal</roleName>
       <groupName>Peminjam</groupName>
+      <groupParentPath>/Requestor</groupParentPath>
     </membership>
     <membership>
       <userName>nael</userName>
       <roleName>Peminjam Fakultas/Unit Lain</roleName>
       <groupName>Peminjam</groupName>
+      <groupParentPath>/Requestor</groupParentPath>
     </membership>
     <membership>
       <userName>kepala</userName>
       <roleName>KepalaLabFTI</roleName>
       <groupName>PengurusLab</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
       <userName>koor</userName>
       <roleName>Koordinator Lab</roleName>
       <groupName>PengurusLab</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
       <userName>penjaga</userName>
       <roleName>PenjagaLab</roleName>
       <groupName>PengurusLab</groupName>
-      <groupParentPath>/FTI</groupParentPath>
+      <groupParentPath>/Approver</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
