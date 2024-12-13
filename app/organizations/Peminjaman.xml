@@ -32,37 +32,15 @@
       <password encrypted="false">dekan</password>
       <customUserInfoValues/>
     </user>
-    <user userName="71220880">
-      <firstName>Peminjam</firstName>
-      <lastName>Internal</lastName>
+    <user userName="jonat">
+      <firstName>Jonathan</firstName>
+      <lastName>Wijaya</lastName>
       <title>Mr</title>
-      <jobTitle>Ketua LK</jobTitle>
-      <manager>wd3</manager>
+      <jobTitle>Mahasiswah</jobTitle>
+      <manager></manager>
       <personalData/>
       <professionalData/>
       <password encrypted="false">jonat</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="dika">
-      <firstName>Peminjam</firstName>
-      <lastName>Eksternal</lastName>
-      <title>Mr</title>
-      <jobTitle>Eksternal</jobTitle>
-      <manager>dekan</manager>
-      <personalData/>
-      <professionalData/>
-      <password encrypted="false">dika</password>
-      <customUserInfoValues/>
-    </user>
-    <user userName="nael">
-      <firstName>Peminjam</firstName>
-      <lastName>Fakultas Unit Lain</lastName>
-      <title>Mr</title>
-      <jobTitle>Fakultas Unit Lain</jobTitle>
-      <manager>wd2</manager>
-      <personalData/>
-      <professionalData/>
-      <password encrypted="false">nael</password>
       <customUserInfoValues/>
     </user>
     <user userName="kepala">
@@ -97,18 +75,10 @@
     </user>
   </users>
   <roles>
-    <role name="PeminjamInternal">
-      <displayName>Peminjam Internal</displayName>
-      <description>Ini peminjam dari organisasi FTI&#xD;
+    <role name="Peminjam">
+      <displayName>Peminjam</displayName>
+      <description>Ini peminjam&#xD;
 </description>
-    </role>
-    <role name="Peminjam Eksternal">
-      <displayName>Peminjam Eksternal</displayName>
-      <description>Ini peminjam dari luar UKDW</description>
-    </role>
-    <role name="Peminjam Fakultas/Unit Lain">
-      <displayName>Peminjam Fakultas/Unit Lain</displayName>
-      <description>Ini peminjam dari fakultas / unit lain di UKDW</description>
     </role>
     <role name="KepalaLabFTI">
       <displayName>Kepala Lab FTI</displayName>
@@ -172,20 +142,8 @@
       <groupParentPath>/Approver</groupParentPath>
     </membership>
     <membership>
-      <userName>71220880</userName>
-      <roleName>PeminjamInternal</roleName>
-      <groupName>Peminjam</groupName>
-      <groupParentPath>/Requestor</groupParentPath>
-    </membership>
-    <membership>
-      <userName>dika</userName>
-      <roleName>PeminjamInternal</roleName>
-      <groupName>Peminjam</groupName>
-      <groupParentPath>/Requestor</groupParentPath>
-    </membership>
-    <membership>
-      <userName>nael</userName>
-      <roleName>Peminjam Fakultas/Unit Lain</roleName>
+      <userName>jonat</userName>
+      <roleName>Peminjam</roleName>
       <groupName>Peminjam</groupName>
       <groupParentPath>/Requestor</groupParentPath>
     </membership>
