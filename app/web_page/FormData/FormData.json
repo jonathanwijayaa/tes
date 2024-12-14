@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "9ba59b70-c67d-4dee-a14d-837956977cbc",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1734101808334,
+  "lastUpdate" : 1734103117329,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -366,7 +366,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "required" : {
                           "type" : "constant",
@@ -462,7 +462,7 @@
                         },
                         "readOnly" : {
                           "type" : "constant",
-                          "value" : false
+                          "value" : true
                         },
                         "required" : {
                           "type" : "constant",
@@ -770,7 +770,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "pengajuanSurat.tipePeminjam"
+                          "value" : "formInput.pengajuanSuratInput.tipePeminjam"
                         }
                       },
                       "reference" : "1fdd61dd-5f47-4714-9fa5-52c1ef386c23",
@@ -920,7 +920,7 @@
                         },
                         "availableValues" : {
                           "type" : "expression",
-                          "value" : "withSurat"
+                          "value" : "denganSurat"
                         },
                         "displayedKey" : {
                           "type" : "constant",
@@ -932,7 +932,7 @@
                         },
                         "value" : {
                           "type" : "variable",
-                          "value" : "pengajuanSurat.withSurat"
+                          "value" : "formInput.pengajuanSuratInput.withSurat"
                         }
                       },
                       "reference" : "ca00e9ea-0bf1-417e-a67a-5ed782792ffb",
@@ -1130,26 +1130,24 @@
       ],
       "exposed" : false
     },
-    "withSurat" : {
-      "type" : "json",
-      "value" : [
-        "[",
-        "    {",
-        "    \"action\":\"Dengan Surat\",",
-        "    \"actionVal\":\"true\"",
-        "    },",
-        "    {",
-        "    \"action\":\"Tanpa Surat\",",
-        "    \"actionVal\":\"false\"",
-        "    }",
-        "]"
-      ],
-      "exposed" : false
-    },
     "cekRuang" : {
       "type" : "url",
       "value" : [
         "../{{context.cekRuang_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "pengajuanSurat" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.pengajuanSurat_ref.link}}"
+      ],
+      "exposed" : false
+    },
+    "denganSurat" : {
+      "type" : "json",
+      "value" : [
+        "[ { \"action\":\"Dengan Surat\", \"actionVal\":true }, { \"action\":\"Tanpa Surat\", \"actionVal\":false } ]"
       ],
       "exposed" : false
     }
