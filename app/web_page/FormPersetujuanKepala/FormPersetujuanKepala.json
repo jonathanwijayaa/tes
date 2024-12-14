@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "ce078913-2b77-4c5b-9df7-ec13a10789ec",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1734144160581,
+  "lastUpdate" : 1734144524083,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -702,7 +702,7 @@
                   },
                   "text" : {
                     "type" : "interpolation",
-                    "value" : "Review Pengajuan Dekan"
+                    "value" : "Review Pengajuan Kepala Lab"
                   },
                   "alignment" : {
                     "type" : "constant",
